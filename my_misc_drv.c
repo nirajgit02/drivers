@@ -16,7 +16,7 @@ struct file_operations my_fops={
         .open=device_open,
         .release=device_release};
 
-
+//just to create difference this line is added
 struct miscdevice my_dev;
 
 
