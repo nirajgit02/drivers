@@ -11,8 +11,8 @@
 #include<asm/uaccess.h>
 #include"ioctl_header.h"
 
-#define AUTHOR "Niraj Ardeshana"
-#define DESC "ioctl implimentation"
+//#define AUTHOR "Niraj Ardeshana"
+//#define DESC "ioctl implimentation"
 
 static dev_t first;//g.var first device number(major)
 static struct cdev c_dev;//g.var character device structure
@@ -124,6 +124,6 @@ void myexit(void)
 module_init(myinit);
 module_exit(myexit);
 
-MODULE_AUTHOR(AUTHOR);
-MODULE_DESCRIPTION(DESC);
+//MODULE_AUTHOR(AUTHOR);
+//MODULE_DESCRIPTION(DESC);
 MODULE_LICENSE("GPL");
