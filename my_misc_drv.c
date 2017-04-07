@@ -11,14 +11,12 @@ static int device_release(struct inode *inode,struct file *file);
 #define AUTHOR "Niraj Ardeshana"
 #define DESC "misc driver"
 
-
 struct file_operations my_fops={
         .open=device_open,
         .release=device_release};
 
 //just to create difference this line is added
 struct miscdevice my_dev;
-
 
 int misc_regs(void)
 {
@@ -34,9 +32,7 @@ int misc_regs(void)
 	printk(KERN_INFO"MINOR IS:%d\n",my_dev.minor);
 	
 	return 0;
-
 }
-
 
 void misc_unregs(void)
 {
@@ -44,7 +40,6 @@ void misc_unregs(void)
 	misc_deregister(&my_dev);
 
 }
-
 
 static int device_open(struct inode *inode,struct file *file)
 {
@@ -64,12 +59,8 @@ static int device_release(struct inode *inode,struct file *file)
 
 }
 
-
-
-
 module_init(misc_regs);
 module_exit(misc_unregs);
-
 
 MODULE_AUTHOR(AUTHOR);
 MODULE_DESCRIPTION(DESC);
