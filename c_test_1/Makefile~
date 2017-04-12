@@ -1,0 +1,8 @@
+final:
+	(cd endians; make final)
+	(cd grep; make final)
+	(cd static; make final)
+	(cd extern; make final)
+	(cd rm_comment; make final)
+	(cd str_func; make final)
+

@@ -1,0 +1,4 @@
+
+-------->If we have declared any variable as extern it will not allocate memory for it.
+	 After declaring extern if we do not define it,it will throw error.
+	 It is defined in another .c file and that file is included in our program, so it will compile successfully.

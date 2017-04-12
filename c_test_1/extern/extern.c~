@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include"file.h"//file has defination of var
+
+extern int var;//only declaration
+
+int main()
+{
+	var=10;
+	printf("value of var is %d\n",var);//it is printing the value of var whose defination is in another fine
+
+}

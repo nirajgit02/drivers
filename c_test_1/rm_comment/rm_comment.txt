@@ -1,0 +1,9 @@
+
+------->taking file name from command line,if file is absent terminate program giving proper msg.
+	If file is present we are creating a new file named "data.c".
+	We are fetching 1 char by char and if it is not '/' we are copying it to "data.c".
+	if two consecutive '//' arrives i will not copy char till '\n' arrives.
+	repeating this till end of file.
+	after completing this i am removing the original file which has comments.
+	Renaming the "data.c" file which does not hve comments as original filename.		
+	

@@ -1,0 +1,13 @@
+
+strncpy:- Passing the addr of src and dest string along with integer value for no. of char to be compared to str_ncpy().
+	  Copying the src string to dest string char by char for first x characters.
+	  After copying place '\0'at the end.
+
+strncat:- Passing the addr of src and dest string along with integer value for no. of char to be concated to str_ncat().
+  	  Making dest pointer to point to '\0'of dest string through while loop.
+	  From the present location of dest pointer i am copying first x characters from src string and placing '\0' at end in dest string.
+
+strcmp:-  Passing the addr of src and dest string along with integer value for no. of char to be compared to str_ncmp().
+	  comparing the first x no. of charactors of src and dest one by one,if it differs printing strings not equal. 
+
+ 

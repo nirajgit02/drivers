@@ -1,0 +1,53 @@
+
+
+#include<stdio.h>
+#include<string.h>
+
+int main(int argc,char** argv)//taking input from command line argument
+{
+	char str[200],ch;
+	int l_size=0,count=0;//l_size is size of longest line
+	FILE* file_ptr;
+
+	if(argc!=3)
+	{
+		printf("usage:./a.out filename string\n");
+		return;
+	}
+	file_ptr=fopen(argv[1],"r");
+	
+	if(file_ptr==0)
+	{
+		printf("%s file is not present\n",argv[1]);
+		return;
+	}
+	printf("%s file is present\n",argv[1]);
+
+	while((ch=fgetc(file_ptr))!=EOF)
+	{
+		if(ch!='\n')
+			count++;
+		else
+		{
+			if(count>l_size)
+				l_size=count;
+			count=0;
+		}
+	}
+	
+	rewind(file_ptr);
+
+	while(fgets(str,l_size+1,file_ptr))
+		if (strstr(str,argv[2]))
+			printf("%s",str);
+
+}
+
+------->we are opening a file by taking filename from command line and string to be searched.
+	If number of argument does not match or file name is not present then we are terminating program.
+	Now we are counting the size of longest line present in the file.
+	rewind the file pointer to starting of file.
+	Again fetching 1-1 line from file of length l_size(longest line)and storing it in a char array of string.
+	Now comparing the string that user entered with the line of string we fetched from file.
+	doing this till end of file,if part of string matches,we are printing that line.
+		

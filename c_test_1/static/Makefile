@@ -1,0 +1,6 @@
+final:keyword_static.o 
+	cc keyword_static.c -o static
+keyword_static.o:keyword_static.c
+	cc -c keyword_static.c
+clean:
+	rm keyword_static.o static

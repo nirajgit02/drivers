@@ -1,0 +1,7 @@
+
+
+------->num contains value 10,char ptr is pointer pointing to int num starting location.
+	If the system is little endian the lowest byte in a 4 byte int value will be stored at lowest location in 4 byte memory.
+	If the system is big endian the lowest byte in a 4 byte int value will be stored at highest location in 4 byte memory.
+	And our pointer is pointing to starting addr of 4 byte memory,if *ptr value is 10 it is little endian,if *ptr value is 0
+	it is big endian.

@@ -1,0 +1,9 @@
+
+------->display finction will display the current value of 'i'.
+	I am calling display() 4 times from main.
+	If the integer 'i' in dispaly() is not static ,it will initializes the value of i=6 every time the display() is called because it will 		create 'i' each time function stack frame is created and gets destroyed as function scope is over.
+	But here due to static word given it will allocate memory once as it is stored in data section.
+
+
+	
+	
