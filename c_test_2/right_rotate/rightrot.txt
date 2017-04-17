@@ -1,0 +1,8 @@
+
+-------->scanning a value and position to be rotated from the user.
+	>passing value and position to rightrot()
+	>bitwise & of number with 1 gives the 0th bit value i.e it is 1 or 0.
+	>If 0th bit is 1 shift the number to right one time and set the MSB bit of that number.
+	>If 0th bit is 0 shift the number to right one time and clear the MSB bit of that number.
+	>above 2 steps is repeated equal to the number of rotation asked by user.
+	>After that,returning this rotated num in main() and dispalying it.

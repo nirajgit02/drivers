@@ -1,0 +1,6 @@
+final:rev_link.o 
+	cc rev_link.c -o rev_link
+rev_list.o:rev_link.c
+	cc -c rev_link.c
+clean:
+	rm rev_link.o rev_link

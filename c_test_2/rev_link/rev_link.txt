@@ -1,0 +1,8 @@
+
+rev_link():- curr is pointing to 1st node of linklist.
+	     Two pointers nxt and pre is pointing to null.
+	     If curr->next is not zero make nxt to point at next node of linklist.
+	     Put addr in pre to curr->next,in this it is null.so now 1st node is pointing to null.
+	     Now put curr addr in pre and make curr to point nxt node.
+	     Repeat these untill curr->next is not null.
+	     

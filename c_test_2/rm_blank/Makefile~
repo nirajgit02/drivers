@@ -1,0 +1,6 @@
+final:rm_blank.o clean
+	cc rm_blank.c -o rm_blank
+rm_blank.o:rm_blank.c
+	cc -c rm_blank.c
+clean:
+	rm rm_blank.o

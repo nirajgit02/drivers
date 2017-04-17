@@ -1,0 +1,2 @@
+
+------->using this inbuilt system calls we can obtain process id,parent id and group id

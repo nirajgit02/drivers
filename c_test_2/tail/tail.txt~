@@ -1,0 +1,6 @@
+
+-------->Taking input from command line as [./a.out -[option] filename\n"] if user has not provided option,open the file named in argument 2.
+	>If user has provided option, check the '-' sign and convert the string into integer with atoi function.
+	>Then open the file in read mode,if file is not present display proper error msg and terminate the program.
+	>count no. of lines present in the file.
+	>rewind the file pointer to starting of file.And using the count and user provided option only print the last n lines.

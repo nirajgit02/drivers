@@ -1,0 +1,9 @@
+
+-------->Create two linklist using insert() function.
+	 I am passing addr of both the head ptr of linklist to merge().
+	 In merge() i am collecting it with double pointer.
+	 In merge() i am comparing each data of 2nd linklist with all nodes data of 1st linklist till the pointor to 1st ll reaches null.
+	 If any node data of 2nd linklist matches with node data of 1st linklist then do not merge and check for nxt data.
+	 If it does not match with any data put address of that node in last node of 1st linklist.
+	 Now break that node from 2nd linklist by placing \0 in its nxt.
+	 Repeat this till end of 2nd linklist.

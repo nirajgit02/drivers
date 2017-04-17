@@ -1,0 +1,4 @@
+
+-------->here in invert() i am passing number, position and location(how many bits from given position).
+	 I am doing XOR of give number with 1 at given position, which will toggle that bit. 
+	 Then i am incrementing the position each time to toggle nxt position in given number,this will be repeated till n number of locations.

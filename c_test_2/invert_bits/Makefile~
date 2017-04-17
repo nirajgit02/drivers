@@ -1,0 +1,6 @@
+final:invert.o clean
+	cc invert.c -o invert
+invert.o:invert.c
+	cc -c invert.c
+clean:
+	rm invert.o

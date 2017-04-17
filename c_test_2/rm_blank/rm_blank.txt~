@@ -1,0 +1,3 @@
+
+--------->Check char by char in the string.If char is space then check for next character,If the 2nd character is not space than do nothing   		  and check for next character.But if 2nd character is also space then shift the whole string to left by one position and again start 		  the same process from 1 position previous to current position to avoid missing consecutive spaces.Similarly with the tab.
+	  

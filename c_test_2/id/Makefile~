@@ -1,0 +1,6 @@
+final:id.o clean
+	cc id.c -o id
+id.o:id.c
+	cc -c id.c
+clean:
+	rm id.o

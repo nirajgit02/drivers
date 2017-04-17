@@ -1,0 +1,5 @@
+
+------>here we are doing bitwise & operation of num with 1 to check whether 0th bit is set or not.
+	If 0th bit is set we are incrimenting count by 1.
+	Then right shif the number one time and doing bitwise & with 1 to check whether 1st bit is set or not.
+	repeating these steps untill number becimes zero will give the number of counts for set bits.

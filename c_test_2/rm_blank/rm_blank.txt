@@ -1,0 +1,5 @@
+
+--------->Open src file and destination file.Copy char by char from src file to destination file.If char is space then check for next 		character,If the 2nd character is not space than fseek -2 character and copy 2 character to destination file.But if 2nd character is 		also space then fetch char 1 by 1 till it is not space and again fseek two char back and copy 2 characters.continue this till EOF.
+	>Thereafter remove src file  and rename destination file as src file.
+	>repeat these steps for '\n' and '\t'.
+	  

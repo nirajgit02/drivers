@@ -1,0 +1,9 @@
+
+------>opening both files to be compared,comparing each character till end of file.
+	After fetching each character if character is same increment count,till '\n'.
+	As '\n' is encountered reset count to 1,and if while comparing character is not same, come out of loop using break.
+	We will hve the count value,count value is indicating that in a new line which no. of character is different.
+	we will seek the file discriptor by that count in both file and print the characters till '\n'.
+
+
+
