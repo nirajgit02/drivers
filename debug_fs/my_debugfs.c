@@ -16,7 +16,7 @@ ssize_t debugfs_read(struct file *file,char *buffer,size_t count,loff_t *offset)
 {
 	return simple_read_from_buffer(buffer,count,offset,ker_buf,len);
 } 
-/*added one comment*/
+
 ssize_t debugfs_write(struct file *file,const char *buffer,size_t count,loff_t *offset)
 {
 	if(count>len)
